@@ -1,13 +1,14 @@
 Tested on Python 3.9
 requires plotly
 
-Reads and graphs PGE downloaded stats.
+Reads and graphs PGE Electricity downloaded stats.
 
  Login to PGE
  Click on ENERGY USEAGE DETAILS
  Scroll down to [Green Button] Download my data
  Select 'Export usage for a range of days' 
- You can select up to one year.
+ You can select up to one year. CSV
+ Unzip and keep the electricity CSV file
 
 If you change code, To run unit tests run `python unit/test_01.py`
 
@@ -35,3 +36,6 @@ optional arguments:
   --start-date START_DATE
                         Start date (YYYY-MM-DD)
   --end-date END_DATE   End date (YYYY-MM-DD)
+
+Example run:
+python graph_pge.py unit/test_data.csv 7
